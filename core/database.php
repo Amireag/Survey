@@ -4,14 +4,14 @@ class Database {
     private $connection;
     
     private $host = 'localhost';
-    private $username = 'mohman_admin';
-    private $password = '@Amirmm21671381';
+    private $username = 'root';
+    private $password = '';
     private $database = 'mohman_survey';
     
     private function __construct() {
         try {
             $this->connection = new PDO(
-                "mysql:host={$this->host};dbname={$this->database};charset=utf8mb4",
+                "mysql:unix_socket=/var/run/mysqld/mysqld.sock;dbname={$this->database};charset=utf8mb4",
                 $this->username,
                 $this->password,
                 [

@@ -6,7 +6,7 @@ $user = getCurrentUser();
 $i18n = I18n::getInstance();
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo $i18n->getCurrentLanguage(); ?>" dir="<?php echo dir(); ?>">
+<html lang="<?php echo $i18n->getCurrentLanguage(); ?>" dir="<?php echo i18n_dir(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@ $i18n = I18n::getInstance();
         
         body {
             font-family: var(--font-primary);
-            direction: <?php echo dir(); ?>;
+            direction: <?php echo i18n_dir(); ?>;
         }
     </style>
     

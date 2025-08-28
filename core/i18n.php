@@ -523,7 +523,7 @@ function t($key, $params = []) {
 }
 
 // Global function for language direction
-function dir() {
+function i18n_dir() {
     return I18n::getInstance()->getDirection();
 }
 
